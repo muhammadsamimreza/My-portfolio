@@ -14,8 +14,8 @@
 <body>
     <section id="hero" class="sm:w-full min-h-screen bg-gray-800 sm:grid sm:relative space-y-10 sm:space-y-0">
         <!-- Navigation bar -->
-        <nav class="sm:w-full w-72 flex justify-center items-center mx-auto bg-gray-800 py-4 sm:absolute ">
-            <div class="sm:container sm:mx-auto sm:flex sm:justify-between sm:items-center px-10 bg-gray-800">
+        <nav class="w-full w-72 flex justify-center items-center mx-auto bg-gray-800 py-4 sm:absolute ">
+            <div class="container mx-auto flex justify-between items-center px-10 bg-gray-800">
                 <div id="logo"
                     class="flex justify-center items-center p-1 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
                     <a href=""
@@ -25,28 +25,28 @@
                             <span><i class="fa-regular fa-registered"></i></span>
                         </span><span>SAMIM</span></a>
                 </div>
-                <ul
-                    class="hidden sm:flex space-x-10 items-center px-3 py-2 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
+                <ul id="navContent"
+                    class="hidden space-y-5 lg:space-y-0 xl:space-x-10  lg:flex lg:space-x-3 items-center px-3 py-2 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
                     <li><a href="#" class="text-black hover:text-white">
-                            <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
+                            <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
                         py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Home
                             </button></a></li>
                     <li><a href="./about.html" class="text-black hover:text-white">
-                            <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
+                            <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
                         py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> About
                             </button></a></li>
                     <li><a href="https://github.com/muhammadsamimreza" target="_blank"
                             class="text-black hover:text-white">
-                            <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
+                            <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-6
                         py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Portfolio
                             </button></a></li>
                     <li><a href="#" class="text-black hover:text-white">
-                            <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
+                            <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-7
                         py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Contact
                             </button></a></li>
                 </ul>
                 <div id="social_Icon"
-                    class="hidden sm:flex flex-row gap-3  px-3 py-3 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
+                    class="hidden lg:flex flex-row md:gap-3  px-3 py-3 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
                     <a href="https://www.linkedin.com/in/samim-reza99/" target="_blank"
                         class="bg-green-400 hover:bg-green-500 text-white rounded-md px-2 py- text-2xl">
                         <i class="fa-brands fa-linkedin"></i></a>
@@ -55,6 +55,11 @@
                     <a href="" class="bg-green-400 hover:bg-green-500 text-white rounded-md px-2 py- text-2xl">
                         <i class="fa-brands fa-instagram"></i></a>
 
+                </div>
+
+                <div id="menu" onclick="showMenu()" class="lg:hidden bg-green-500 hover:bg-green-600 px-2 py-1 rounded-md shadow-md shadow-white">
+                    <span id="navMenuButtonOn"><i class="fa-solid fa-bars text-3xl text-white"></i></span>
+                    <span class="hidden" id="navMenuButtonOff"><i class="fa-solid fa-xmark text-3xl text-white "></i></span>
                 </div>
             </div>
         </nav>
@@ -65,13 +70,13 @@
             <div id="details"
                 class="text-center sm:text-left flex flex-col justify-center items-center sm:items-start order-2 sm:order-1">
                 <div id="My_info" class="w-[82%] space-y-7 ">
-                    <h1 class="text-white text-4xl lg:text-6xl xl:text-8xl font-bold"><span
-                            class="text-white sm:text-6xl sm:text-yellow-500">Hello, I'm </span>
+                    <h1 class="text-white text-4xl font-bold"><span
+                            class="text-white sm:text-4xl lg:text-6xl xl:text-7xl sm:text-yellow-500">Hello, I'm </span>
                         <br>
-                        <span class="text-green-600">Muhammad <br> Samim
+                        <span class="sm:text-4xl lg:text-6xl xl:text-7xl text-green-600 ">Muhammad <br> Samim
                             Reza</span>
                     </h1>
-                    <h2 class="text-center sm:text-left sm:text-xl   text-gray-300"> I am a passionate <span
+                    <h2 class="text-center sm:text-left md:text-xl   text-gray-300"> I am a passionate <span
                             class="text-yellow-500 font-medium">frontend developer</span> with strong
                         skills in <span class="text-yellow-500 font-medium">HTML,</span>
                         <span class="text-yellow-500 font-medium">CSS,</span> and
@@ -102,7 +107,7 @@
             </div>
             <div id="Photo" class="flex justify-center items-center mb-10 sm:mb-0 sm:order-1">
                 <div id="image"
-                    class="lg:w-[350px] lg:h-[350px] xl:w-[550px] xl:h-[550px] w-80 h-80 relative rounded-full overflow-hidden border-4 border-yellow-500 ">
+                    class="sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[550px] xl:h-[550px] w-80 h-80 relative rounded-full overflow-hidden border-4 border-yellow-500 ">
                     <img class="absolute" src="../images/samim_coverjpg.jpg" alt="Photo">
                 </div>
 
@@ -120,7 +125,7 @@
 
 
 
-
+<script src="./main.js"></script>
 </body>
 
 </html>
