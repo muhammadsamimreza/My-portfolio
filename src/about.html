@@ -12,9 +12,9 @@
 </head>
 
 <body class="bg-gray-700">
-    <section id="hero" class="sm:w-full min-h-screen bg-gray-700  space-y-10 sm:space-y-5">
+    <section id="hero" class="sm:w-full bg-gray-700  space-y-10 sm:space-y-5">
         <!-- Navigation bar -->
-        <div id="navbar" class="space-y-10 sm:space-y-24 bg-gray-800 pb-6">
+        <div id="navbar" class="space-y-10 sm:space-y-20 bg-gray-800 pb-6">
             <nav class="sm:w-full w-72 flex justify-center items-center mx-auto bg-gray-800 py-4 ">
                 <div class="sm:container sm:mx-auto sm:flex sm:justify-between sm:items-center px-10 bg-gray-800">
                     <div id="logo"
@@ -55,13 +55,15 @@
                             <i class="fa-brands fa-facebook"></i></a>
                         <a href="" class="bg-green-400 hover:bg-green-500 text-white rounded-md px-2 py- text-2xl">
                             <i class="fa-brands fa-instagram"></i></a>
-    
+
                     </div>
                 </div>
             </nav>
-    
+
             <div class="container mx-auto px-10">
-                <h1 class="text-2xl sm:text-4xl text-gray-300 font-semibold border-b pb-2 border-green-500 rounded-r-xl rounded-l-xl px-2 py-4">About Me</h1>
+                <h1
+                    class="text-2xl sm:text-4xl text-gray-300 font-semibold border-b pb-2 border-green-500 rounded-r-xl rounded-l-xl px-2 py-4">
+                    About Me</h1>
             </div>
         </div>
 
@@ -74,15 +76,22 @@
             <div id="details"
                 class="text-center sm:text-left flex flex-col justify-center items-center sm:items-start order-2 sm:order-1">
                 <div id="My_info" class="w-2/3 space-y-5 text-xl">
-                    <div><h1 class="text-5xl font-bold text-white">Hi <span><i class="fa-solid fa-handshake text-yellow-500"></i></span> I'm Samim Reza</h1></div>
-                    <div><h1 class="text-gray-300">I am a passionate frontend developer with strong skills in HTML, CSS, and
-                        JavaScript. I recently completed my training in Web Design & Development at
-                        the Rajshahi City Corporation Employment Skill Development Institute. I also
-                        have a basic understanding of PHP and experience working with the Tailwind
-                        CSS framework. As a fresher, I am eager to apply my knowledge and
-                        creativity to build user-friendly and visually appealing websites. I am
-                        committed to continuous learning and staying updated with the latest trends in web development.</h1></div>
-                    
+                    <div>
+                        <h1 class="text-5xl font-bold text-white">Hi <span><i
+                                    class="fa-solid fa-handshake text-yellow-500"></i></span> I'm Samim Reza</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-gray-300">I am a passionate frontend developer with strong skills in HTML, CSS,
+                            and
+                            JavaScript. I recently completed my training in Web Design & Development at
+                            the Rajshahi City Corporation Employment Skill Development Institute. I also
+                            have a basic understanding of PHP and experience working with the Tailwind
+                            CSS framework. As a fresher, I am eager to apply my knowledge and
+                            creativity to build user-friendly and visually appealing websites. I am
+                            committed to continuous learning and staying updated with the latest trends in web
+                            development.</h1>
+                    </div>
+
 
 
                 </div>
@@ -112,29 +121,45 @@
 
     </section>
 
-    <section class="w-full min-h-screen text-white text-xl">
-        <div id="details" class="container mx-auto px-40 flex ">
+    <section class="w-full text-white text-xl">
+        <div id="details" class="container mx-auto px-40 space-y-20">
             <div class="flex flex-row gap-20">
-                <div id="background" class="w-1/2 space-y-5">
-                    <h1 class="text-3xl font-bold">Background</h1>
-                    <h1> I recently completed my training in Web Design & Development at
-                        the Rajshahi City Corporation Employment Skill Development Institute.</h1>
-                </div>
-                <div id="Skills" class="space-y-5">
-                    <h1 class="text-3xl font-bold">Skills</h1>
-                    <ul class="">
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Visual Studio Code</li>
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>GitHub</li>
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Google Workspace</li>
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Figma</li>
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Slack</li>
-                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Trello</li>
+                <div id="Skills" class="space-y-5 w-1/2">
+                    <h1 class="text-yellow-500 text-2xl sm:text-3xl font-bold border-b pb-2 border-green-500 rounded-r-xl rounded-l-xl px-2 py-4">Skills</h1>
+                    <ul class="flex flex-row gap-20">
+                        <div>
+                            <li><i class="fa-solid fa-circle text-xs pr-3"></i>HTML5</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>CSS3</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>JavaScript</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>TailwindCSS</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>PHP</li>
+                        </div>
+                        <div>
+                            <li><i class="fa-solid fa-circle text-xs pr-3"></i>Git, GitHub</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Wordpress</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Figma to HTML</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>PSD to HTML</li>
+                        <li><i class="fa-solid fa-circle text-xs pr-3"></i>Responsive Design</li>
+                        </div>
                     </ul>
                 </div>
+                <div id="background" class="w-1/2 space-y-5 ">
+                    <h1 class="text-yellow-500 text-2xl sm:text-3xl font-bold border-b pb-2 border-green-500 rounded-r-xl rounded-l-xl px-2 py-4">Background</h1>
+                    <h1>I am studying Bachelor of Science in Chemistry from National University of Bangladesh. I have
+                        completed my training in Web Design & Development at
+                        the Rajshahi City Corporation Employment Skill Development Institute.I also led a 10-day
+                        workshop focused on freelancing, in collaboration with Japan International Cooperation Agency (
+                        JICA ).Professional English communication skills Training Powered by RCCESDI.</h1>
+                </div>
             </div>
-            <div>
 
-            </div>
+            <footer>
+
+                <div class="border-b border-t rounded-e-xl rounded-l-xl border-green-500 py-5 text-center">
+                   <span><i class="fa-regular fa-copyright"></i></span> <span>2024 - Present samimreza. All rights reserved.</span>
+                </div>
+                
+            </footer>
         </div>
     </section>
 
