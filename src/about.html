@@ -12,7 +12,8 @@
 </head>
 
 <body class="bg-gray-700">
-    <section id="hero" class="sm:w-full bg-gray-700  space-y-10 sm:space-y-5">
+    <section id="hero" class="sm:w-full bg-gray-700  space-y-10 sm:space-y-5
+    relative">
         <!-- Navigation bar -->
         <div id="navbar" class="space-y-10 sm:space-y-20 bg-gray-800 pb-6">
             <nav class="w-full flex justify-center items-center mx-auto bg-gray-800 py-4 ">
@@ -26,26 +27,29 @@
                                 <span><i class="fa-regular fa-registered"></i></span>
                             </span><span>SAMIM</span></a>
                     </div>
-                    <ul id="navContent"
-                        class="hidden space-y-5 lg:space-y-0 xl:space-x-10  lg:flex lg:space-x-3 items-center px-3 py-2 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
-                        <li><a href="./index.html" class="text-black hover:text-white">
-                                <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
+                    <div id="NavSection" class="">
+                        <ul id="navContent"
+                            class="hidden space-y-5 lg:space-y-0 xl:space-x-10  lg:flex lg:space-x-3 items-center  py-2 border-b border-t lg:rounded-e-xl lg:rounded-l-xl border-green-500
+                           ">
+                            <li><a href="./index.html" class="text-black hover:text-white">
+                                    <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
                             py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Home
-                                </button></a></li>
-                        <li><a href="./about.html" class="text-black hover:text-white">
-                                <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
+                                    </button></a></li>
+                            <li><a href="./about.html" class="text-black hover:text-white">
+                                    <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-8
                             py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> About
-                                </button></a></li>
-                        <li><a href="https://github.com/muhammadsamimreza" target="_blank"
-                                class="text-black hover:text-white">
-                                <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-6
+                                    </button></a></li>
+                            <li><a href="https://github.com/muhammadsamimreza" target="_blank"
+                                    class="text-black hover:text-white">
+                                    <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-6
                             py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Portfolio
-                                </button></a></li>
-                        <li><a href="#" class="text-black hover:text-white">
-                                <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-7
+                                    </button></a></li>
+                            <li><a href="#" class="text-black hover:text-white">
+                                    <button type="submit" class="bg-yellow-500 shadow shadow-white lg:px-6 px-7
                             py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> Contact
-                                </button></a></li>
-                    </ul>
+                                    </button></a></li>
+                        </ul>
+                    </div>
                     <div id="social_Icon"
                         class="hidden lg:flex flex-row md:gap-3  px-3 py-3 border-b border-t rounded-e-xl rounded-l-xl border-green-500">
                         <a href="https://www.linkedin.com/in/samim-reza99/" target="_blank"
@@ -55,9 +59,9 @@
                             <i class="fa-brands fa-facebook"></i></a>
                         <a href="" class="bg-green-400 hover:bg-green-500 text-white rounded-md px-2 py- text-2xl">
                             <i class="fa-brands fa-instagram"></i></a>
-    
+
                     </div>
-    
+
                     <div id="menu" onclick="showMenu()"
                         class="lg:hidden bg-green-500 hover:bg-green-600 px-2 py-1 rounded-md shadow-md shadow-white">
                         <span id="navMenuButtonOn"><i class="fa-solid fa-bars text-3xl text-white"></i></span>
@@ -263,17 +267,17 @@
     </section>
 
     <section id="footer" class="sm:pb-16 pb-10 px-2 sm:px-0 pt-16 sm:pt-0">
-        <footer class="container mx-auto px-5 flex flex-col sm:flex-row items-center justify-between border-b border-t rounded-e-xl rounded-l-xl border-green-500">
+        <footer
+            class="container mx-auto px-5 flex flex-col sm:flex-row items-center justify-between border-b border-t rounded-e-xl rounded-l-xl border-green-500">
 
             <div class="hidden sm:block">
                 <a href="#" class="text-black hover:text-white">
-                        <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
-                            py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all"> 
-                            My Portfolio</button></a>
+                    <button type="submit" class="bg-yellow-500 shadow shadow-white px-6 
+                            py-2 font-medium rounded-md hover:bg-yellow-600 hover:text-white transition-all">
+                        My Portfolio</button></a>
             </div>
-    
-            <div
-                class="sm:text-xl text-gray-400">
+
+            <div class="sm:text-xl text-gray-400">
                 <span><i class="fa-regular fa-copyright"></i></span> <span>2024 - Present samim reza. All rights
                     reserved.</span>
             </div>
@@ -282,20 +286,22 @@
                     <a href="https://www.linkedin.com/in/samim-reza99/" target="_blank"
                         class="bg-yellow-500 hover:bg-green-500 text-white rounded-md px-2 text-base sm:text-2xl">
                         <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="" class="bg-yellow-500 hover:bg-green-500 text-white rounded-md px-2 text-base sm:text-2xl">
+                    <a href=""
+                        class="bg-yellow-500 hover:bg-green-500 text-white rounded-md px-2 text-base sm:text-2xl">
                         <i class="fa-brands fa-facebook"></i></a>
-                    <a href="" class="bg-yellow-500 hover:bg-green-500 text-white rounded-md px-2 text-base sm:text-2xl">
+                    <a href=""
+                        class="bg-yellow-500 hover:bg-green-500 text-white rounded-md px-2 text-base sm:text-2xl">
                         <i class="fa-brands fa-instagram"></i></a>
-    
+
                 </div>
             </div>
-    
+
         </footer>
-    
+
     </section>
 
 
-
+    <script src="./main.js"></script>
 </body>
 
 </html>
